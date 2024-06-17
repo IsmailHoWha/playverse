@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playverse Game Platform</title>
+    <title>PlayVerse Game Platform</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Playverse</h1>
-    <p>This is your game platform!</p>
+    <header>
+        <h1>Welcome to PlayVerse!</h1>
+    </header>
+
+    <main>
+        <section id="game-list">
+            <h2>Featured Games</h2>
+            <!-- Replace with dynamic content or game thumbnails -->
+            <div class="game-card">
+                <h3>Game Title</h3>
+                <img src="images/game-thumbnail.jpg" alt="Game Thumbnail">
+                <p>Description of the game...</p>
+                <button onclick="playGame('game-id')">Play Game</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PlayVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
