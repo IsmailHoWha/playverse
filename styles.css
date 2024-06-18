@@ -15,6 +15,11 @@ header {
     align-items: center;
 }
 
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Ensures image scales proportionally */
+}
+
 header h1 {
     margin: 0;
     font-size: 1.8rem;
