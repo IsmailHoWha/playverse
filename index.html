@@ -3,40 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Playverse - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="file:///media/fuse/crostini_248cd382368e823d22b1750fa4483aae76548988_termina_penguin/P.png" alt="Playverse Logo">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="path_to_your_logo_image" alt="Playverse Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <h1>       Welcome to Playverse    </h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Games</a></li> <!-- New Games button -->
-                <li><a href="#">Create</a></li> <!-- New Create button -->
-            </ul>
-        </nav>
     </header>
     
     <main>
-        <section>
-            <h2>Featured Games</h2>
-            <!-- Add featured game content here -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Playverse</h1>
+                <p>Explore a world of games and creativity.</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
         </section>
         
-        <section>
-            <h2>Latest News</h2>
-            <!-- Add latest news content here -->
+        <section class="featured-games">
+            <div class="container">
+                <h2>Featured Games</h2>
+                <div class="game-card">
+                    <img src="game1.jpg" alt="Game 1">
+                    <h3>Game 1 Title</h3>
+                    <p>Description of Game 1.</p>
+                    <a href="#" class="btn">Play Now</a>
+                </div>
+                <!-- Add more game cards as needed -->
+            </div>
+        </section>
+        
+        <section class="latest-news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div class="news-item">
+                    <h3>News Title</h3>
+                    <p>Summary of the latest news item.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <!-- Add more news items as needed -->
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Playverse. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Playverse. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
