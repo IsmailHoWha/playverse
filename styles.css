@@ -8,16 +8,16 @@
 /* Set up basic styles for the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #f0f0f0; /* Grey background */
+    color: #333; /* Black text color */
     line-height: 1.6;
     margin: 0;
 }
 
 /* Header styles */
 header {
-    background-color: #ddd; /* Change background color to grey */
-    color: #333; /* Change text color to black */
+    background-color: #ddd; /* Change header background color if needed */
+    color: #333; /* Change header text color if needed */
     padding: 1rem;
     text-align: center;
 }
@@ -25,9 +25,9 @@ header {
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #333; /* Ensure h1 text color is black */
 }
 
+/* Navigation styles */
 header nav ul {
     list-style-type: none;
 }
@@ -38,7 +38,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #333; /* Ensure navigation link color is black */
+    color: #333;
     text-decoration: none;
     font-size: 1.2rem;
 }
