@@ -1,4 +1,3 @@
-<!-- signup.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +38,9 @@
                     method: 'POST',
                     body: formData,
                 });
+                if (!response.ok) {
+                    throw new Error('Failed to sign up.');
+                }
                 const data = await response.json();
                 signupMessage.innerHTML = `User created successfully. Your user ID is ${data.user.id}.`;
                 // Optionally redirect or perform additional actions after signup
