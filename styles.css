@@ -1,74 +1,74 @@
-/* Reset default styles and apply general styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* styles.css */
 
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333; /* Dark grey text */
+    background-color: #f2f2f2; /* Light grey background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
 }
 
+/* Header styles */
 header {
-    background-color: #2f2f2f; /* Dark header background */
-    color: #fff; /* White text */
+    background-color: #333; /* Dark header background */
+    color: #fff; /* Light text color */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo {
+    width: 120px; /* Adjust logo width as needed */
+}
+
 nav ul {
     list-style-type: none;
-    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
+    display: inline-block;
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* Link color */
     text-decoration: none;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Yellow hover color */
+    color: #ffc107; /* Hover color */
 }
 
-.main-content {
+/* Main content styles */
+main {
     padding: 20px;
 }
 
-.section {
+section {
     margin-bottom: 30px;
-}
-
-.section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.section p {
-    line-height: 1.6;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
     padding: 20px;
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for sections */
 }
 
-.footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+h1, h2 {
+    color: #333; /* Dark text color */
 }
 
-.footer a:hover {
-    color: #ffd700; /* Yellow hover color */
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark footer background */
+    color: #fff; /* Light text color */
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
