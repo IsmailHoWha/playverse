@@ -6,6 +6,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Serve static files from the 'public' directory
+app.use(express.static('public'));
+
 // In-memory storage for simplicity; use a database in production
 let nextUserId = 1;
 const users = [];
@@ -13,7 +16,7 @@ const users = [];
 // Handle POST request to /signup
 app.post('/signup', (req, res) => {
     const { username, password, email } = req.body;
-    
+
     // Example: Validate input (e.g., check if username is unique)
     const existingUser = users.find(user => user.username === username);
     if (existingUser) {
@@ -39,9 +42,6 @@ app.post('/signup', (req, res) => {
         },
     });
 });
-
-// Serve static files from the "public" directory
-app.use(express.static('public'));
 
 // Start server
 const PORT = process.env.PORT || 3000;
