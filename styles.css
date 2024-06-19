@@ -1,85 +1,102 @@
 /* styles.css */
 
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light grey background */
+/* Reset some default browser styling */
+body, h1, h2, h3, p, ul, li, footer {
     margin: 0;
     padding: 0;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 .container {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 /* Header */
 header {
-    background-color: #333; /* Dark background for header */
-    color: #fff; /* White text */
+    background-color: #007bff;
     padding: 10px 0;
-    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
-    display: inline-block;
-    margin-right: 10px;
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    display: inline-block;
     font-size: 24px;
+    color: #fff;
     margin: 0;
 }
 
 /* Navigation */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: right; /* Align buttons to the right */
+nav {
+    display: flex;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 10px;
+nav ul {
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #0056b3;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #0056b3;
+    background-color: #003f7f;
 }
 
 /* Main Content */
 main {
+    background-color: #fff;
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
-section {
+main section {
     margin-bottom: 20px;
 }
 
-section h2 {
-    font-size: 20px;
+main h2 {
+    font-size: 22px;
+    color: #007bff;
     margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #007bff;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
